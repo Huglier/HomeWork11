@@ -19,11 +19,10 @@ public class Main {
         }
     }
 
-    public static void checkDevice(int clientOS, int clientDeviceYear){
+    public static void checkDevice(int clientOS, int clientDeviceYear) {
         if (clientDeviceYear < 2015 && clientOS == 0) {
             System.out.println("Установите облегчённую версию приложения для IOS по ссылке");
-        }
-        else if (clientDeviceYear < 2015 && clientOS == 1)
+        } else if (clientDeviceYear < 2015 && clientOS == 1)
             System.out.println("Установите облегчённую версию приложения для Android по ссылке");
         else if (clientOS == 0)
             System.out.println("Установите версию приложения для IOS по ссылке");
@@ -61,7 +60,7 @@ public class Main {
 
         int clientOS = 0;
         int clientDeviceYear = 2010;
-        checkDevice(clientOS,clientDeviceYear);
+        checkDevice(clientOS, clientDeviceYear);
 
         System.out.println("Задача 3");
 
